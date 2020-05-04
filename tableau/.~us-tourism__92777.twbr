@@ -15,7 +15,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='us-tourism' path='/workbooks' revision='2.3' />
+  <repository-location id='us-tourism' path='/workbooks' revision='2.5' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -2315,6 +2315,7 @@
           <style-rule element='cell'>
             <format attr='width' value='975' />
             <format attr='text-format' field='[federated.0dlphl80u6lgij1d00dws1yfuqme].[avg:Volume of arrivals:qk]' value='n#,##0,,.0M;-#,##0,,.0M' />
+            <format attr='height' value='582' />
           </style-rule>
           <style-rule element='header'>
             <format attr='band-color' scope='rows' value='#ffffff' />
@@ -2426,6 +2427,8 @@
               <style-rule element='pane'>
                 <format attr='minwidth' value='-1' />
                 <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
               </style-rule>
             </style>
           </pane>
@@ -2884,6 +2887,9 @@
           <style-rule element='label'>
             <format attr='display' field='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[yr:year:ok]' value='true' />
           </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
           <style-rule element='table-div'>
             <format attr='stroke-size' scope='cols' value='0' />
             <format attr='line-visibility' scope='cols' value='off' />
@@ -2986,17 +2992,22 @@
           </formatted-text>
         </zone>
         <zone h='20889' id='70' type='empty' w='98688' x='188' y='1000' />
-        <zone h='13222' id='73' name='yearly_%entries_market share' show-title='false' w='39375' x='7250' y='76667' />
-        <zone h='2333' id='74' leg-item-layout='horz' leg-item-order='normal' name='yearly_%entries_market share' pane-specification-id='0' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[:Measure Names]' show-title='false' type='color' w='32688' x='15500' y='73444' />
-        <zone h='23889' id='75' name='yearly_entries_by_state' show-title='false' w='38375' x='61250' y='74556' />
-        <zone h='24111' id='76' name='yearly_entries_by_state' pane-specification-id='0' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[none:state:nk]' type='color' w='9000' x='51438' y='73444' />
+        <zone h='13889' id='73' name='yearly_%entries_market share' show-title='false' w='39375' x='6938' y='80556' />
+        <zone h='2889' id='74' leg-item-layout='horz' leg-item-order='normal' name='yearly_%entries_market share' pane-specification-id='0' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[:Measure Names]' show-title='false' type='color' w='26625' x='14375' y='76000' />
+        <zone h='23556' id='75' name='yearly_entries_by_state' show-title='false' w='38375' x='61313' y='75333' />
+        <zone h='25000' id='76' name='yearly_entries_by_state' pane-specification-id='0' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[none:state:nk]' type='color' w='9000' x='51438' y='73444' />
+        <zone forceUpdate='true' h='3333' id='77' type='text' w='11938' x='77125' y='73222'>
+          <formatted-text>
+            <run fontcolor='#1b1b1b'>Yearly Entries by State</run>
+          </formatted-text>
+        </zone>
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <size maxheight='2600' minheight='2600' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='72' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='71' param='vert' type='layout-flow' w='99000' x='500' y='889'>
+            <zone h='100000' id='81' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='80' param='vert' type='layout-flow' w='99000' x='500' y='889'>
                 <zone fixed-size='187' h='20778' id='51' is-fixed='true' name='doughnat_visa_type' show-title='false' w='22438' x='76000' y='444'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3018,7 +3029,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='135' h='15000' id='68' is-fixed='true' name='avg_volume_month' show-title='false' w='30000' x='49188' y='1444'>
+                <zone fixed-size='135' h='15000' id='68' is-fixed='true' name='avg_volume_month' show-title='false' w='28688' x='50500' y='1444'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3039,7 +3050,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='140' h='15556' id='50' is-fixed='true' name='avg_entries_line_chart' show-title='false' w='29688' x='18375' y='2556'>
+                <zone fixed-size='140' h='15556' id='50' is-fixed='true' name='avg_entries_line_chart' show-title='false' w='30188' x='18375' y='2556'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3087,7 +3098,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='4000' id='67' type='text' w='5063' x='84875' y='9111'>
+                <zone forceUpdate='true' h='4000' id='67' type='text' w='5063' x='84625' y='9000'>
                   <formatted-text>
                     <run fontcolor='#555555'>Visitors by Category</run>
                   </formatted-text>
@@ -3099,7 +3110,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='2333' id='18' type='text' w='13875' x='5438' y='11667'>
+                <zone forceUpdate='true' h='4556' id='18' type='text' w='10938' x='6250' y='10556'>
                   <formatted-text>
                     <run bold='true' fontcolor='#333333'>Total International Tourist Arrivals from 2011 to 2019</run>
                   </formatted-text>
@@ -3144,7 +3155,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='25800' id='16' mode='checkdropdown' name='state_vol_per_market' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[yr:year:ok]' type='filter' values='cascading' w='4688' x='1375' y='31800'>
+                <zone h='25778' id='16' mode='dropdown' name='state_vol_per_market' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[yr:year:ok]' type='filter' values='cascading' w='4688' x='1313' y='34778'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3198,6 +3209,54 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
+                <zone forceUpdate='true' h='3333' id='77' type='text' w='11938' x='77125' y='73222'>
+                  <formatted-text>
+                    <run fontcolor='#1b1b1b'>Yearly Entries by State</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='212' h='23556' id='75' is-fixed='true' name='yearly_entries_by_state' show-title='false' w='38375' x='61313' y='75333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='25000' id='76' name='yearly_entries_by_state' pane-specification-id='0' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[none:state:nk]' type='color' w='9000' x='51438' y='73444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='125' h='13889' id='73' is-fixed='true' name='yearly_%entries_market share' show-title='false' w='39375' x='6938' y='80556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2889' id='74' leg-item-layout='horz' leg-item-order='normal' name='yearly_%entries_market share' pane-specification-id='0' param='[federated.1pdlwy8063eryl1eda0zc1w7uv03].[:Measure Names]' show-title='false' type='color' w='26625' x='14375' y='76000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
               </zone>
               <zone-style>
                 <format attr='border-color' value='#000000' />
@@ -3220,7 +3279,27 @@
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
-          <zones />
+          <zones>
+            <zone h='100000' id='5' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='4' param='vert' type='layout-flow' w='99000' x='500' y='889'>
+                <zone fixed-size='280' h='63333' id='1' is-fixed='true' name='square_avg_vol_country' w='61063' x='1000' y='1778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
         </devicelayout>
       </devicelayouts>
       <simple-id uuid='{A1A900D0-6739-44B9-A86A-5CCE03342530}' />
@@ -3558,7 +3637,7 @@
       </cards>
       <simple-id uuid='{46E66596-E986-4F2A-B2AF-9F544DE4F2C3}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard' tab-color='#f66273'>
+    <window class='dashboard' name='Dashboard' tab-color='#f66273'>
       <viewpoints>
         <viewpoint name='avg_entries_line_chart'>
           <zoom type='entire-view' />
@@ -3586,14 +3665,14 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='75' />
+      <active id='-1' />
       <simple-id uuid='{6382E673-5BB1-4B8D-8C69-D0D9556C2436}' />
     </window>
-    <window class='dashboard' name='Dashboard 2'>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
       <viewpoints>
         <viewpoint name='square_avg_vol_country' />
       </viewpoints>
-      <active id='-1' />
+      <active id='1' />
       <simple-id uuid='{3021DA0F-4677-476D-AC40-E3439C4DC8C7}' />
     </window>
   </windows>
